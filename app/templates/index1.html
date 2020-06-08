@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Second</title>
+    {%load static%}
+        <link rel="stylesheet" type="text/css" href="{%static 'style.css'%}">
+</head>
+<body>
+    <mark>Im Here</mark>
+    <p>Just Trying</p>
+    <h1>Users Till Now</h1>
+    {%for i in User%}
+    {{i.Name}}<br>
+    {{i.Email}}<br>
+    {{i.Date}}<br>
+    {%endfor%}
+</body>
+</html>
